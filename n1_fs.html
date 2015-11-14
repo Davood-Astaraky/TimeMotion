@@ -15,126 +15,210 @@
       display: block;
       margin-left: auto; 
       margin-right: auto;
-      width: 600px;
-      height: 400px;
+      width: 1000px;
+      height: 600px;
     }  
     </style>
     
   </head>
   <body >
     
-    <div id = 'chart7e914375269' class = 'rChart nvd3'></div>    
+    <div id = 'nvd3plot' class = 'rChart nvd3'></div>    
     <script type='text/javascript'>
  $(document).ready(function(){
-      drawchart7e914375269()
+      drawnvd3plot()
     });
-    function drawchart7e914375269(){  
+    function drawnvd3plot(){  
       var opts = {
- "dom": "chart7e914375269",
-"width":    600,
-"height":    400,
-"x": "Hair",
+ "dom": "nvd3plot",
+"width":   1000,
+"height":    600,
+"x": "Task_cat2",
 "y": "Freq",
-"group": "Eye",
+"group": "Timeslot",
 "type": "multiBarChart",
-"id": "chart7e914375269" 
+"id": "nvd3plot" 
 },
         data = [
  {
- "Hair": "Black",
-"Eye": "Brown",
-"Sex": "Male",
-"Freq":             32 
+ "Task_cat2": "Administration",
+"Timeslot": "0300-0900",
+"Freq": 43 
 },
 {
- "Hair": "Brown",
-"Eye": "Brown",
-"Sex": "Male",
-"Freq":             53 
+ "Task_cat2": "Administration",
+"Timeslot": "0900-1500",
+"Freq": 125 
 },
 {
- "Hair": "Red",
-"Eye": "Brown",
-"Sex": "Male",
-"Freq":             10 
+ "Task_cat2": "Administration",
+"Timeslot": "1500-2100",
+"Freq": 125 
 },
 {
- "Hair": "Blond",
-"Eye": "Brown",
-"Sex": "Male",
-"Freq":              3 
+ "Task_cat2": "Administration",
+"Timeslot": "2100-0300",
+"Freq": 119 
 },
 {
- "Hair": "Black",
-"Eye": "Blue",
-"Sex": "Male",
-"Freq":             11 
+ "Task_cat2": "Communication",
+"Timeslot": "0300-0900",
+"Freq": 1005 
 },
 {
- "Hair": "Brown",
-"Eye": "Blue",
-"Sex": "Male",
-"Freq":             50 
+ "Task_cat2": "Communication",
+"Timeslot": "0900-1500",
+"Freq": 1746 
 },
 {
- "Hair": "Red",
-"Eye": "Blue",
-"Sex": "Male",
-"Freq":             10 
+ "Task_cat2": "Communication",
+"Timeslot": "1500-2100",
+"Freq": 1893 
 },
 {
- "Hair": "Blond",
-"Eye": "Blue",
-"Sex": "Male",
-"Freq":             30 
+ "Task_cat2": "Communication",
+"Timeslot": "2100-0300",
+"Freq": 2237 
 },
 {
- "Hair": "Black",
-"Eye": "Hazel",
-"Sex": "Male",
-"Freq":             10 
+ "Task_cat2": "Direct Care",
+"Timeslot": "0300-0900",
+"Freq": 1488 
 },
 {
- "Hair": "Brown",
-"Eye": "Hazel",
-"Sex": "Male",
-"Freq":             25 
+ "Task_cat2": "Direct Care",
+"Timeslot": "0900-1500",
+"Freq": 2573 
 },
 {
- "Hair": "Red",
-"Eye": "Hazel",
-"Sex": "Male",
-"Freq":              7 
+ "Task_cat2": "Direct Care",
+"Timeslot": "1500-2100",
+"Freq": 2127 
 },
 {
- "Hair": "Blond",
-"Eye": "Hazel",
-"Sex": "Male",
-"Freq":              5 
+ "Task_cat2": "Direct Care",
+"Timeslot": "2100-0300",
+"Freq": 2553 
 },
 {
- "Hair": "Black",
-"Eye": "Green",
-"Sex": "Male",
-"Freq":              3 
+ "Task_cat2": "Documentation",
+"Timeslot": "0300-0900",
+"Freq": 394 
 },
 {
- "Hair": "Brown",
-"Eye": "Green",
-"Sex": "Male",
-"Freq":             15 
+ "Task_cat2": "Documentation",
+"Timeslot": "0900-1500",
+"Freq": 544 
 },
 {
- "Hair": "Red",
-"Eye": "Green",
-"Sex": "Male",
-"Freq":              7 
+ "Task_cat2": "Documentation",
+"Timeslot": "1500-2100",
+"Freq": 368 
 },
 {
- "Hair": "Blond",
-"Eye": "Green",
-"Sex": "Male",
-"Freq":              8 
+ "Task_cat2": "Documentation",
+"Timeslot": "2100-0300",
+"Freq": 472 
+},
+{
+ "Task_cat2": "Education",
+"Timeslot": "0300-0900",
+"Freq": 351 
+},
+{
+ "Task_cat2": "Education",
+"Timeslot": "0900-1500",
+"Freq": 348 
+},
+{
+ "Task_cat2": "Education",
+"Timeslot": "1500-2100",
+"Freq": 324 
+},
+{
+ "Task_cat2": "Education",
+"Timeslot": "2100-0300",
+"Freq": 705 
+},
+{
+ "Task_cat2": "Indirect Care",
+"Timeslot": "0300-0900",
+"Freq": 1158 
+},
+{
+ "Task_cat2": "Indirect Care",
+"Timeslot": "0900-1500",
+"Freq": 2687 
+},
+{
+ "Task_cat2": "Indirect Care",
+"Timeslot": "1500-2100",
+"Freq": 1863 
+},
+{
+ "Task_cat2": "Indirect Care",
+"Timeslot": "2100-0300",
+"Freq": 1800 
+},
+{
+ "Task_cat2": "Non-physician tasks",
+"Timeslot": "0300-0900",
+"Freq": 85 
+},
+{
+ "Task_cat2": "Non-physician tasks",
+"Timeslot": "0900-1500",
+"Freq": 128 
+},
+{
+ "Task_cat2": "Non-physician tasks",
+"Timeslot": "1500-2100",
+"Freq": 104 
+},
+{
+ "Task_cat2": "Non-physician tasks",
+"Timeslot": "2100-0300",
+"Freq": 137 
+},
+{
+ "Task_cat2": "Personal",
+"Timeslot": "0300-0900",
+"Freq": 382 
+},
+{
+ "Task_cat2": "Personal",
+"Timeslot": "0900-1500",
+"Freq": 465 
+},
+{
+ "Task_cat2": "Personal",
+"Timeslot": "1500-2100",
+"Freq": 692 
+},
+{
+ "Task_cat2": "Personal",
+"Timeslot": "2100-0300",
+"Freq": 728 
+},
+{
+ "Task_cat2": "Transit",
+"Timeslot": "0300-0900",
+"Freq": 750 
+},
+{
+ "Task_cat2": "Transit",
+"Timeslot": "0900-1500",
+"Freq": 1197 
+},
+{
+ "Task_cat2": "Transit",
+"Timeslot": "1500-2100",
+"Freq": 1069 
+},
+{
+ "Task_cat2": "Transit",
+"Timeslot": "2100-0300",
+"Freq": 1269 
 } 
 ]
   
@@ -166,7 +250,8 @@
         }
           
          
-        
+        chart
+  .color([ "brown", "blue", "#594c26", "green" ])
           
         
 
