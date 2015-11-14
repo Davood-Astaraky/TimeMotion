@@ -15,7 +15,7 @@
       display: block;
       margin-left: auto; 
       margin-right: auto;
-      width: 600px;
+      width: 800px;
       height: 400px;
     }  
     </style>
@@ -23,118 +23,112 @@
   </head>
   <body >
     
-    <div id = 'chart7e914375269' class = 'rChart nvd3'></div>    
+    <div id = 'chart5a48c97714' class = 'rChart nvd3'></div>    
     <script type='text/javascript'>
  $(document).ready(function(){
-      drawchart7e914375269()
+      drawchart5a48c97714()
     });
-    function drawchart7e914375269(){  
+    function drawchart5a48c97714(){  
       var opts = {
- "dom": "chart7e914375269",
-"width":    600,
+ "dom": "chart5a48c97714",
+"width":    800,
 "height":    400,
-"x": "Hair",
+"x": "Task_cat2",
 "y": "Freq",
-"group": "Eye",
+"group": "Type",
 "type": "multiBarChart",
-"id": "chart7e914375269" 
+"id": "chart5a48c97714" 
 },
         data = [
  {
- "Hair": "Black",
-"Eye": "Brown",
-"Sex": "Male",
-"Freq":             32 
+ "Task_cat2": "Administration",
+"Type": "Jr Resident",
+"Freq": 162 
 },
 {
- "Hair": "Brown",
-"Eye": "Brown",
-"Sex": "Male",
-"Freq":             53 
+ "Task_cat2": "Administration",
+"Type": "Sr Resident",
+"Freq": 250 
 },
 {
- "Hair": "Red",
-"Eye": "Brown",
-"Sex": "Male",
-"Freq":             10 
+ "Task_cat2": "Communication",
+"Type": "Jr Resident",
+"Freq": 3029 
 },
 {
- "Hair": "Blond",
-"Eye": "Brown",
-"Sex": "Male",
-"Freq":              3 
+ "Task_cat2": "Communication",
+"Type": "Sr Resident",
+"Freq": 3852 
 },
 {
- "Hair": "Black",
-"Eye": "Blue",
-"Sex": "Male",
-"Freq":             11 
+ "Task_cat2": "Direct Care",
+"Type": "Jr Resident",
+"Freq": 3696 
 },
 {
- "Hair": "Brown",
-"Eye": "Blue",
-"Sex": "Male",
-"Freq":             50 
+ "Task_cat2": "Direct Care",
+"Type": "Sr Resident",
+"Freq": 5045 
 },
 {
- "Hair": "Red",
-"Eye": "Blue",
-"Sex": "Male",
-"Freq":             10 
+ "Task_cat2": "Documentation",
+"Type": "Jr Resident",
+"Freq": 842 
 },
 {
- "Hair": "Blond",
-"Eye": "Blue",
-"Sex": "Male",
-"Freq":             30 
+ "Task_cat2": "Documentation",
+"Type": "Sr Resident",
+"Freq": 936 
 },
 {
- "Hair": "Black",
-"Eye": "Hazel",
-"Sex": "Male",
-"Freq":             10 
+ "Task_cat2": "Education",
+"Type": "Jr Resident",
+"Freq": 613 
 },
 {
- "Hair": "Brown",
-"Eye": "Hazel",
-"Sex": "Male",
-"Freq":             25 
+ "Task_cat2": "Education",
+"Type": "Sr Resident",
+"Freq": 1115 
 },
 {
- "Hair": "Red",
-"Eye": "Hazel",
-"Sex": "Male",
-"Freq":              7 
+ "Task_cat2": "Indirect Care",
+"Type": "Jr Resident",
+"Freq": 3777 
 },
 {
- "Hair": "Blond",
-"Eye": "Hazel",
-"Sex": "Male",
-"Freq":              5 
+ "Task_cat2": "Indirect Care",
+"Type": "Sr Resident",
+"Freq": 3731 
 },
 {
- "Hair": "Black",
-"Eye": "Green",
-"Sex": "Male",
-"Freq":              3 
+ "Task_cat2": "Non-physician tasks",
+"Type": "Jr Resident",
+"Freq": 196 
 },
 {
- "Hair": "Brown",
-"Eye": "Green",
-"Sex": "Male",
-"Freq":             15 
+ "Task_cat2": "Non-physician tasks",
+"Type": "Sr Resident",
+"Freq": 258 
 },
 {
- "Hair": "Red",
-"Eye": "Green",
-"Sex": "Male",
-"Freq":              7 
+ "Task_cat2": "Personal",
+"Type": "Jr Resident",
+"Freq": 1022 
 },
 {
- "Hair": "Blond",
-"Eye": "Green",
-"Sex": "Male",
-"Freq":              8 
+ "Task_cat2": "Personal",
+"Type": "Sr Resident",
+"Freq": 1245 
+},
+{
+ "Task_cat2": "Transit",
+"Type": "Jr Resident",
+"Freq": 2026 
+},
+{
+ "Task_cat2": "Transit",
+"Type": "Sr Resident",
+"Freq": 2259 
 } 
 ]
   
@@ -166,13 +160,16 @@
         }
           
          
-        
+        chart
+  .color([ "#594c26", "green" ])
           
-        
+        chart.xAxis
+  .axisLabel("Task Categories")
 
         
         
-        
+        chart.yAxis
+  .axisLabel("Frequency")
       
        d3.select("#" + opts.id)
         .append('svg')
